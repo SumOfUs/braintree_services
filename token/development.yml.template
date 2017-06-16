@@ -1,0 +1,5 @@
+# Clone this template file and update with sandbox credentials from https://sandbox.braintreegateway.com
+
+merchant_id: xxxx
+public_key: xxxx
+private_key: xxxx

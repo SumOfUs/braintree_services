@@ -1,0 +1,9 @@
+dependencies:
+  pre:
+    - npm install serverless -g
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./deploy.sh
