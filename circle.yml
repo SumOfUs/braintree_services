@@ -1,5 +1,6 @@
 dependencies:
-  - npm install serverless -g
+  pre:
+    - npm install serverless -g
 
 deployment:
   production:
