@@ -3,8 +3,7 @@ frameworkVersion: ">=1.8.0 <2.0.0"
 
 custom:
   stage: ${opt:stage, self:provider.stage}
-  default_env: 'Sandbox'
-  keys: ${file(token/development.yml):}
+  default_env: 'sandbox'
 
 provider:
   name: aws
@@ -12,9 +11,9 @@ provider:
   region: us-west-2
   environment:
     ENV: ${opt:env, self:custom.default_env}
-    MERCHANT_ID: ${opt:merchant_id, self:custom.keys.merchant_id }
-    PUBLIC_KEY: ${opt:public_key, self:custom.keys.public_key}
-    PRIVATE_KEY: ${opt:private_key, self:custom.keys.private_key}
+    MERCHANT_ID: ${opt:merchant_id}
+    PUBLIC_KEY: ${opt:public_key}
+    PRIVATE_KEY: ${opt:private_key}
 
 functions:
   token:

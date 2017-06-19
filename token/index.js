@@ -2,6 +2,7 @@
 
 const braintree = require("braintree");
 console.log(JSON.stringify(process.env));
+
 const gateway = braintree.connect({
   environment: braintree.Environment[process.env.ENV],
   merchantId: process.env.MERCHANT_ID,
