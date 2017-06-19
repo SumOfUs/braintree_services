@@ -1,3 +1,5 @@
+npm install
+
 serverless deploy -s prod \
   --verbose \
   --merchant_id $MERCHANT_ID \
