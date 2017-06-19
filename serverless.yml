@@ -19,4 +19,7 @@ functions:
   token:
     handler: token/index.handler
     events:
-      - http: GET braintree/token
+      - http:
+          method: get
+          path: braintree/token
+          cors: true
