@@ -19,4 +19,4 @@ functions:
   token:
     handler: token/index.handler
     events:
-      - http: GET handler
+      - http: GET braintree/token
