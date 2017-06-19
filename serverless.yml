@@ -3,7 +3,7 @@ frameworkVersion: ">=1.8.0 <2.0.0"
 
 custom:
   stage: ${opt:stage, self:provider.stage}
-  default_env: 'sandbox'
+  default_env: 'Sandbox'
 
 provider:
   name: aws

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "braintree": "^2.1.1"
+  }
+}
