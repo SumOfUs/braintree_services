@@ -9,6 +9,8 @@ provider:
   name: aws
   runtime: nodejs6.10
   region: us-west-2
+  memorySize: 128
+  timeout: 2
   environment:
     ENV: ${opt:env, self:custom.default_env}
     MERCHANT_ID: ${opt:merchant_id}
@@ -20,6 +22,6 @@ functions:
     handler: token/index.handler
     events:
       - http:
-          method: get
+          method: GET
           path: braintree/token
           cors: true
