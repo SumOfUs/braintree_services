@@ -10,7 +10,7 @@ provider:
   runtime: nodejs6.10
   region: us-west-2
   memorySize: 128
-  timeout: 2
+  timeout: 8
   environment:
     ENV: ${opt:env, self:custom.default_env}
     MERCHANT_ID: ${opt:merchant_id}
